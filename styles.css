@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700|Nunito|Raleway&display=swap");
+body {
+  background: url(/Pictures/background.jpg) no-repeat fixed;
+}
+
+/*body */
+/*# sourceMappingURL=styles.css.map */

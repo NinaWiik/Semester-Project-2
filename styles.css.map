@@ -1,8 +1,12 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACYA,OAAO,CAAC,yFAAI;AGZZ,AAAA,IAAI,CAAA;EACA,UAAU,EAAE,6BAA6B,CAAC,SAAS,CAAC,KAAK;CAC5D;;AJaD,SAAS",
     "sources": [
-        "styles.scss"
+        "styles.scss",
+        "Partials/_variables.scss",
+        "Partials/_mixins.scss",
+        "Partials/_blocktags.scss",
+        "Partials/_body.scss"
     ],
     "names": [],
     "file": "styles.css"
