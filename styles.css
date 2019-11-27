@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel:400,700|Nunito|Raleway&display=swap");
 body {
-  background: url(/Pictures/background.jpg) no-repeat fixed;
+  background: url(Pictures/background1.jpg) no-repeat fixed;
+  background-size: contain;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 /*body */

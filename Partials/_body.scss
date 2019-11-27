@@ -1,3 +1,9 @@
 body{
-    background: url(/Pictures/background.jpg) no-repeat fixed;
+    background: url(Pictures/background1.jpg) no-repeat fixed;
+    background-size: contain;
+}
+
+.flex-container {
+    display: flex;
+    flex-grow: 2
 }
