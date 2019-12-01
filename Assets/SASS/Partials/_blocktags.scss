@@ -1,3 +1,19 @@
 p {
     @include paragraph;
 }
+
+h2 {
+    font-family: $header-font;
+    font-size: 2.5em;
+    background-color: $darkTeal;
+    margin: 0 700px 0 700px;
+    padding: 10px;
+    border: 2px solid $white;
+    color: $yellow;
+    font-weight: 100;
+    border-radius: 40px;
+}
+
+main {
+    text-align: center;
+}

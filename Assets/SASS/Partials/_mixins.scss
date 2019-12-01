@@ -7,7 +7,7 @@
 
 @mixin column {
     flex: 5;
-    background-color: $lightTeal;
+    background-color: rgba(51, 150, 179, 0.8);
     padding: 20px;
     border: 2px solid $white;
     margin: 20px;
