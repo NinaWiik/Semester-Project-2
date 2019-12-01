@@ -1,0 +1,31 @@
+
+
+@mixin charImg {
+    width: 100%;
+
+}
+
+@mixin column {
+    flex: 5;
+    background-color: $lightTeal;
+    padding: 20px;
+    border: 2px solid $white;
+    margin: 20px;
+}
+
+@mixin paragraph {
+    font-family: $body-font2;
+    font-size: 1em;
+    color: $white;
+}
+
+@mixin characterBtn {
+    font-family: $body-font;
+    background-color: $darkPurple;
+    border: 2px solid $white;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px; 
+    color: $white;
+    cursor: pointer;
+    font-weight: bold;
+}

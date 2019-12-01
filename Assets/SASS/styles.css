@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700|Nunito|Raleway&display=swap");
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
+body {
+  background: url(Pictures/background1.jpg) no-repeat fixed;
+}
+
+header {
+  text-align: center;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding: 20px;
+}
+
+.col1, .col2, .col3, .col4, .col5 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  background-color: #367c92;
+  padding: 20px;
+  border: 2px solid #FFFFFF;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding: 20px;
+}
+
+.characterImg {
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.charSelect {
+  font-family: "Raleway", sans-serif;
+  background-color: #560753;
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*body */
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+    flex-grow: 2;
+    padding: 20px;  
+}
+
+
+
+.col1, .col2, .col3, .col4, .col5  {
+    @include column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-grow: 2;
+    padding: 20px;  
+}
+
+.characterImg {
+    @include charImg;
+    align-self: flex-start;
+}
+
+
+.charSelect {
+    @include characterBtn;
+}
