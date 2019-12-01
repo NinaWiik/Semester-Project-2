@@ -5,8 +5,24 @@ p {
   color: #FFFFFF;
 }
 
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5em;
+  background-color: #073f50;
+  margin: 0 700px 0 700px;
+  padding: 10px;
+  border: 2px solid #FFFFFF;
+  color: #ffb20a;
+  font-weight: 100;
+  border-radius: 40px;
+}
+
+main {
+  text-align: center;
+}
+
 body {
-  background: url(Pictures/background1.jpg) no-repeat fixed;
+  background: url(../../../assets/pictures/background1.jpg) no-repeat fixed;
 }
 
 header {
@@ -27,7 +43,7 @@ header {
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
-  background-color: #367c92;
+  background-color: rgba(51, 150, 179, 0.8);
   padding: 20px;
   border: 2px solid #FFFFFF;
   margin: 20px;
