@@ -1,24 +1,33 @@
 .flex-container {
     display: flex;
-    flex-grow: 2;
-    padding: 20px;  
-    //  max-width: 1100px;
+    margin-top: 20px;
 }
 
 
 
-.col1, .col2, .col3, .col4, .col5  {
+.col {
     @include column;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    margin: 0 5px 0 5px;
 }
+
+.character:hover {
+    background-color: rgba(51, 150, 179, 0.8);
+    cursor: pointer;
+}
+
+.character:active {
+    border: 2px solid $yellow;
+}
+
 
 .flex-container2 {
     display: flex;
-    flex-grow: 2;
-    padding: 20px;  
+    flex-grow: 2;  
+    margin-top: 20px;
 }
 
 .characterImg {
@@ -29,4 +38,32 @@
 
 .charSelect {
     @include characterBtn;
+}
+
+.container-selection {
+    font-family: $header-font;
+    font-size: 2.5em;
+    background-color: rgba(7, 63, 80, 0.8);
+    padding: 10px;
+    border: 2px solid $white;
+    color: $yellow;
+    font-weight: 100;
+    border-radius: 40px;
+    margin: 0 700px 0 700px;
+}
+
+#startGame {
+    font-size: 20px;
+    background-color: $darkPurple;
+    padding: 15px;
+    border: 2px solid $white;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    color: $white;
+}
+
+.content-container {
+    max-width: 1400px;
+    margin: 0 auto;
 }

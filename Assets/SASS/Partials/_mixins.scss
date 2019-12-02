@@ -1,14 +1,14 @@
 
 
 @mixin charImg {
-    width: 100%;
-
+    height: 220px;
+    margin-top: 20px;
 }
 
 @mixin column {
     flex: 5;
-    background-color: rgba(51, 150, 179, 0.8);
-    padding: 20px;
+    background-color: rgba(7, 63, 80, 0.8);
+    padding: 5px;
     border: 2px solid $white;
     margin: 20px;
 }

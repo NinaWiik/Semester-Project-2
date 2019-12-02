@@ -42,7 +42,7 @@ var characterTyrion;
 getCharacters(1052).then(function (data) {
     characterTyrion = data;
     console.log(characterTyrion);
-    document.getElementById('tyrion').innerHTML += '<p><b>Name:</b> ' + characterTyrion.name + '</p><p><b>Gender:</b> ' + characterTyrion.gender + '</p><p><b>Aliases:</b> ' + characterTyrion.aliases[0] + ', ' + characterTyrion.aliases[1] + ', ' + characterTyrion.aliases[9] + ', ' + characterTyrion.aliases[10] + '</p><p><b>Born:</b> ' + characterTyrion.born + '</p>';
+    document.getElementById('tyrion').innerHTML += '<p><b>Name:</b> ' + characterTyrion.name + '</p><p><b>Gender:</b> ' + characterTyrion.gender + '</p><p><b>Aliases:</b> ' + characterTyrion.aliases[0] + ', ' + characterTyrion.aliases[1] + ', ' + characterTyrion.aliases[9] + '</p><p><b>Born:</b> ' + characterTyrion.born + '</p>';
 });
 
 var characterMargaery;
@@ -58,7 +58,7 @@ var characterJoffrey;
 getCharacters(565).then(function (data) {
     characterJoffrey = data;
     console.log(characterJoffrey);
-    document.getElementById('joffrey').innerHTML += '<p><b>Name:</b> ' + characterJoffrey.name + '</p><p><b>Gender:</b> ' + characterJoffrey.gender + '</p><p><b>Born:</b> ' + characterJoffrey.born + '</p><p><b>Died:</b> ' + characterJoffrey.died + '</p>';
+    document.getElementById('joffrey').innerHTML += '<p><b>Name:</b> ' + characterJoffrey.name + '</p><p><b>Gender:</b> ' + characterJoffrey.gender + '</p><p><b>Aliases:</b> ' + characterJoffrey.aliases[0] + '</p><p><b>Born:</b> ' + characterJoffrey.born + '</p>';
 });
 
 var characterOberyn;
@@ -66,7 +66,7 @@ var characterOberyn;
 getCharacters(1770).then(function (data) {
     characterOberyn = data;
     console.log(characterOberyn);
-    document.getElementById('oberyn').innerHTML += '<p><b>Name:</b> ' + characterOberyn.name + '</p><p><b>Gender:</b> ' + characterOberyn.gender + '<p><b>Culture:</b> ' + characterOberyn.culture + '</p></p><p><b>Born:</b> ' + characterOberyn.born + '</p>';
+    document.getElementById('oberyn').innerHTML += '<p><b>Name:</b> ' + characterOberyn.name + '</p><p><b>Gender:</b> ' + characterOberyn.gender + '</p><p><b>Culture:</b> ' + characterOberyn.culture + '</p><p><b>Born:</b> ' + characterOberyn.born + '</p>';
 });
 
 var characterCatelyn;

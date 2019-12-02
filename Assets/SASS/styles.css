@@ -3,18 +3,16 @@ p {
   font-family: "Nunito", sans-serif;
   font-size: 1em;
   color: #FFFFFF;
+  margin: 0;
+  padding: 10px 0 10px 0;
 }
 
 h2 {
   font-family: "Cinzel", serif;
-  font-size: 2.5em;
-  background-color: #073f50;
-  margin: 0 700px 0 700px;
+  font-size: 1em;
   padding: 10px;
-  border: 2px solid #FFFFFF;
   color: #ffb20a;
   font-weight: 100;
-  border-radius: 40px;
 }
 
 main {
@@ -29,22 +27,23 @@ header {
   text-align: center;
 }
 
+.logo {
+  width: 500px;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  padding: 20px;
+  margin-top: 20px;
 }
 
-.col1, .col2, .col3, .col4, .col5 {
+.col {
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
-  background-color: rgba(51, 150, 179, 0.8);
-  padding: 20px;
+  background-color: rgba(7, 63, 80, 0.8);
+  padding: 5px;
   border: 2px solid #FFFFFF;
   margin: 20px;
   display: -webkit-box;
@@ -60,6 +59,16 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin: 0 5px 0 5px;
+}
+
+.character:hover {
+  background-color: rgba(51, 150, 179, 0.8);
+  cursor: pointer;
+}
+
+.character:active {
+  border: 2px solid #ffb20a;
 }
 
 .flex-container2 {
@@ -69,11 +78,12 @@ header {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  padding: 20px;
+  margin-top: 20px;
 }
 
 .characterImg {
-  width: 100%;
+  height: 220px;
+  margin-top: 20px;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -87,6 +97,197 @@ header {
   color: #FFFFFF;
   cursor: pointer;
   font-weight: bold;
+}
+
+.container-selection {
+  font-family: "Cinzel", serif;
+  font-size: 2.5em;
+  background-color: rgba(7, 63, 80, 0.8);
+  padding: 10px;
+  border: 2px solid #FFFFFF;
+  color: #ffb20a;
+  font-weight: 100;
+  border-radius: 40px;
+  margin: 0 700px 0 700px;
+}
+
+#startGame {
+  font-size: 20px;
+  background-color: #560753;
+  padding: 15px;
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.content-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#dice {
+  border: 2px solid black;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+#dice.rolling {
+  color: #cd40ff;
+  background: #560753;
+}
+
+.character-display {
+  height: 300px;
+}
+
+.character-display.arya-stark {
+  background-image: url(../../assets/pictures/characters/png/arya.png);
+  background-repeat: no-repeat;
+}
+
+.character-display.jon-snow {
+  background-image: url(../../assets/pictures/characters/png/jonsnow.png);
+  background-repeat: no-repeat;
+}
+
+.logo-game {
+  width: 400px;
+}
+
+.player-display {
+  color: white;
+  font-size: 40px;
+}
+
+.player-field {
+  float: left;
+  margin-left: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.square {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  height: 80px;
+  width: 80px;
+  margin: 3px;
+}
+
+.board {
+  margin-top: 20px;
+  position: relative;
+  margin-left: 200px;
+}
+
+.tile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 650px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tile {
+  border: 2px solid white;
+  background: #367c92;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  font-family: "Nunito", sans-serif;
+}
+
+.tile.start {
+  border: 2px solid white;
+  background: #073f50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  font-family: "Nunito", sans-serif;
+}
+
+.tile.finish {
+  border: 2px solid white;
+  background: #560753;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  font-family: "Nunito", sans-serif;
+}
+
+.character-score-display {
+  color: white;
+}
+
+.token-1.start-only {
+  position: absolute;
+  left: -50px;
+}
+
+.character-display {
+  color: white;
+}
+
+.token {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.token.arya-stark {
+  background-image: url(../../assets/pictures/shields/png/shieldstarkgirl.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.token.Jon {
+  background: #ffb20a;
 }
 
 /*body */

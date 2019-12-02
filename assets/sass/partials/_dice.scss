@@ -1,0 +1,15 @@
+#dice {
+    border: 2px solid black;
+    background-color: $white;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+#dice.rolling {
+    color: $purple;
+    background: $darkPurple;
+
+}

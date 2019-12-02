@@ -1,0 +1,104 @@
+.logo-game {
+    width: 400px;
+}
+
+.player-display {
+    color: white;
+    font-size: 40px;
+}
+.player-field {
+    float: left;
+    margin-left: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.square {
+    transform: rotate(0);
+    height: 80px;
+    width: 80px;
+    margin: 3px;
+}
+
+.board {
+    margin-top: 20px;
+    position: relative;
+    margin-left: 200px;
+}
+
+.tile-container {
+    display: flex;
+    justify-content: center;
+    width: 650px;
+    flex-wrap: wrap;
+}
+
+.tile {
+    border: 2px solid white;
+    background: $lightTeal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-family: $body-font2;
+}
+
+.tile.start {
+    border: 2px solid white;
+    background: $darkTeal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-family: $body-font2;
+}
+
+.tile.finish {
+    border: 2px solid white;
+    background: $darkPurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-family: $body-font2;
+}
+
+.character-score-display {
+    color: white;
+}
+
+
+
+
+.token-1.start-only {
+    position: absolute;
+    left: -50px;
+}
+
+.character-display {
+    color: white;
+}
+
+.token {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+
+
+.token.arya-stark {
+    background-image: url(../../assets/pictures/shields/png/shieldstarkgirl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.token.Jon {
+    background: $yellow;
+}

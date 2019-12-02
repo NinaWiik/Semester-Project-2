@@ -1,132 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Game of Dragons</title>
     <link rel="stylesheet" type="text/css" href="assets/sass/styles.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <img src="assets/pictures/logo/logowhite.png" class="logo" alt="logo with dragon" />
+        <img src="assets/pictures/logo/logowhite.png" class="logo" alt="logo with dragon" />
     </header>
     <main>
-      <h2>Choose a charater</h2>
-      <div id="chosenCharacter"></div>
-      <div class="flex-container">
-        <div class="col1">
-          <div>
-            <img
-              src="assets/pictures/characters/png/arya.png"
-              class="characterImg"
-              alt="Character image of Arya Stark"
-            />
-          </div>
-          <div id="arya"></div>
-          <button class="charSelect">Choose Arya</button>
+        <div class="container-selection">
+            <div id="selectedCharacter" class="selected-character">Choose a charater</div>
+            <button id="startGame" hidden>Start Game</button>
+            <div id="chosenCharacter"></div>
         </div>
-        <div class="col2">
-          <div>
-            <img
-              src="assets/pictures/characters/png/jonsnow.png"
-              class="characterImg"
-              alt="Character image of Jon Snow"
-            />
-          </div>
-          <div id="jon"></div>
-          <button class="charSelect">Choose Jon</button>
-        </div>
-        <div class="col3">
-          <div>
-            <img
-              src="assets/pictures/characters/png/denerys.png"
-              class="characterImg"
-              alt="Character image of Daenerys Targaryan"
-            />
-          </div>
-          <div id="daenerys"></div>
-          <button class="charSelect">Choose Daenerys</button>
-        </div>
-        <div class="col4">
-          <div>
-            <img
-              src="assets/pictures/characters/png/theon.png"
-              class="characterImg"
-              alt="Character image of Theon Greyjoy"
-            />
-          </div>
-          <div id="theon"></div>
-          <button class="charSelect">Choose Theon</button>
-        </div>
-        <div class="col5">
-          <div>
-            <img
-              src="assets/pictures/characters/png/tyrion1.png"
-              class="characterImg"
-              alt="Character image of Tyrion Lannister"
-            />
-          </div>
-          <div id="tyrion"></div>
-          <button class="charSelect">Choose Tyrion</button>
-        </div>
-      </div>
+        <div class="content-container">
+            <div class="flex-container">
+                <div class="col character" data-name="Arya Stark">
+                    <div>
+                        <img src="assets/pictures/characters/png/arya.png" class="characterImg" alt="Character image of Arya Stark" />
+                    </div>
+                    <div id="arya"></div>
+                </div>
+                <div class="col character" data-name="Jon Snow">
+                    <div>
+                        <img src="assets/pictures/characters/png/jonsnow.png" class="characterImg" alt="Character image of Jon Snow" />
+                    </div>
+                    <div id="jon"></div>
+                </div>
+                <div class="col character" data-name="Daenerys Targaryan">
+                    <div>
+                        <img src="assets/pictures/characters/png/denerys.png" class="characterImg" alt="Character image of Daenerys Targaryan" />
+                    </div>
+                    <div id="daenerys"></div>
+                </div>
+                <div class="col character" data-name="Theon Greyjoy">
+                    <div>
+                        <img src="assets/pictures/characters/png/theon.png" class="characterImg" alt="Character image of Theon Greyjoy" />
+                    </div>
+                    <div id="theon"></div>
+                </div>
+                <div class="col character" data-name="Tyrion Lannister">
+                    <div>
+                        <img src="assets/pictures/characters/png/tyrion1.png" class="characterImg" alt="Character image of Tyrion Lannister" />
+                    </div>
+                    <div id="tyrion"></div>
+                </div>
+            </div>
 
-      <div class="flex-container2">
-        <div class="col1">
-          <div>
-            <img
-              src="assets/pictures/characters/png/tyrell.png"
-              class="characterImg"
-              alt="Character image of Margerey Tyrell"
-            />
-          </div>
-          <div id="margaery"></div>
-          <button class="charSelect">Choose Margaery</button>
-        </div>
-        <div class="col2">
-          <div>
-            <img
-              src="assets/pictures/characters/png/joffrey.png"
-              class="characterImg"
-              alt="Character image of Joffrey Baratheon"
-            />
-          </div>
-          <div id="joffrey"></div>
-          <button class="charSelect">Choose Joffrey</button>
-        </div>
-        <div class="col3">
-          <div>
-            <img
-              src="assets/pictures/characters/png/oberyn.png"
-              class="characterImg"
-              alt="Character image of Oberyn Martell"
-            />
-          </div>
-          <div id="oberyn"></div>
-          <button class="charSelect">Choose Oberyn</button>
-        </div>
-        <div class="col4">
-          <div>
-            <img
-              src="assets/pictures/characters/png/catelyn.png"
-              class="characterImg"
-              alt="Character image of Catelyn Stark"
-            />
-          </div>
-          <div id="catelyn"></div>
-          <button class="charSelect">Choose Catelyn</button>
-        </div>
-        <div class="col5">
-          <div>
-            <img
-              src="assets/pictures/characters/png/cersey.png"
-              class="characterImg"
-              alt="Character image of Cersey Lannister"
-            />
-          </div>
-          <div id="cersey"></div>
-          <button class="charSelect">Choose Cersey</button>
-        </div>
-      </div>
+            <div class="flex-container2">
+                <div class="col character" data-name="Margaery Tyrell">
+                    <div>
+                        <img src="assets/pictures/characters/png/tyrell.png" class="characterImg"
+                            alt="Character image of Margaery Tyrell" />
+                    </div>
+                    <div id="margaery"></div>
+                </div>
+                <div class="col character" data-name="Joffrey Baratheon">
+                    <div>
+                        <img src="assets/pictures/characters/png/joffrey.png" class="characterImg"
+                            alt="Character image of Joffrey Baratheon" />
+                    </div>
+                    <div id="joffrey"></div>
+                </div>
+                <div class="col character" data-name="Oberyn Martell">
+                    <div>
+                        <img src="assets/pictures/characters/png/oberyn.png" class="characterImg"
+                            alt="Character image of Oberyn Martell" />
+                    </div>
+                    <div id="oberyn"></div>
+                </div>
+                <div class="col character" data-name="Catelyn Stark">
+                    <div>
+                        <img src="assets/pictures/characters/png/catelyn.png" class="characterImg"
+                            alt="Character image of Catelyn Stark" />
+                    </div>
+                    <div id="catelyn"></div>
+                </div>
+                <div class="col character" data-name="Cersey Lannister">
+                    <div>
+                        <img src="assets/pictures/characters/png/cersey.png" class="characterImg"
+                            alt="Character image of Cersey Lannister" />
+                    </div>
+                    <div id="cersey"></div>
+                </div>
+            </div>
     </main>
     <script src="assets/javascript/character.js"></script>
-  </body>
+    <script src="assets/javascript/characterSelect.js"></script>
+</body>
+
 </html>
