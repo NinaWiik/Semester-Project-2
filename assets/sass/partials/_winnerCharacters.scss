@@ -1,59 +1,60 @@
-// CHARACTERS
-.character-display {
+.winner-display {
     width: 280px;
-    font-family: $header-font;
     font-size: 30px;
-    padding-top: 300px;
+    margin: 0 auto;
+    height: 300px;
+
 }
 
-.character-display.arya-stark {
+.winner-display.arya-stark {
     background-image: url(../../assets/pictures/characters/png/arya.png);
     background-repeat: no-repeat;
     
 }
 
-.character-display.jon-snow {
+
+.winner-display.jon-snow {
     background-image: url(../../assets/pictures/characters/png/jonsnow.png);
     background-repeat: no-repeat;
 }
 
-.character-display.daenerys-targaryan {
+.winner-display.daenerys-targaryan {
     background-image: url(../../assets/pictures/characters/png/denerys.png);
     background-repeat: no-repeat;
     
 }
 
-.character-display.theon-greyjoy {
+.winner-display.theon-greyjoy {
     background-image: url(../../assets/pictures/characters/png/theon.png);
     background-repeat: no-repeat;
 }
 
-.character-display.tyrion-lannister {
+.winner-display.tyrion-lannister {
     background-image: url(../../assets/pictures/characters/png/tyrion1.png);
     background-repeat: no-repeat;
 }
 
-.character-display.margaery-tyrell {
+.winner-display.margaery-tyrell {
     background-image: url(../../assets/pictures/characters/png/tyrell.png);
     background-repeat: no-repeat;
 }
 
-.character-display.joffrey-baratheon {
+.winner-display.joffrey-baratheon {
     background-image: url(../../assets/pictures/characters/png/joffrey.png);
     background-repeat: no-repeat;
 }
 
-.character-display.oberyn-martell {
+.winner-display.oberyn-martell {
     background-image: url(../../assets/pictures/characters/png/oberyn.png);
     background-repeat: no-repeat;
 }
 
-.character-display.catelyn-stark {
+.winner-display.catelyn-stark {
     background-image: url(../../assets/pictures/characters/png/catelyn.png);
     background-repeat: no-repeat;
 }
 
-.character-display.cersei-lannister {
+.winner-display.cersei-lannister {
     background-image: url(../../assets/pictures/characters/png/cersey.png);
     background-repeat: no-repeat;
 }

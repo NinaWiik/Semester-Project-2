@@ -29,6 +29,23 @@ header {
 
 .logo {
   width: 500px;
+  margin-left: 150px;
+}
+
+.backBtnIndex {
+  display: block;
+  margin-right: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  background: #560753;
+  margin: 20px;
+  padding: 10px 80px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.backBtnIndex:hover {
+  background: #073f50;
 }
 
 .flex-container {
@@ -131,19 +148,34 @@ header {
   border: 2px solid black;
   background-color: #FFFFFF;
   border-radius: 5px;
-  width: 60px;
-  height: 60px;
-  margin: 15px 0;
-  font-size: 20px;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  font-size: 35px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 #dice.rolling {
-  color: #cd40ff;
-  background: #560753;
+  font-size: 50px;
 }
 
 .character-display {
-  height: 300px;
+  width: 280px;
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  padding-top: 300px;
 }
 
 .character-display.arya-stark {
@@ -156,37 +188,198 @@ header {
   background-repeat: no-repeat;
 }
 
+.character-display.daenerys-targaryan {
+  background-image: url(../../assets/pictures/characters/png/denerys.png);
+  background-repeat: no-repeat;
+}
+
+.character-display.theon-greyjoy {
+  background-image: url(../../assets/pictures/characters/png/theon.png);
+  background-repeat: no-repeat;
+}
+
+.character-display.tyrion-lannister {
+  background-image: url(../../assets/pictures/characters/png/tyrion1.png);
+  background-repeat: no-repeat;
+}
+
+.character-display.margaery-tyrell {
+  background-image: url(../../assets/pictures/characters/png/tyrell.png);
+  background-repeat: no-repeat;
+}
+
+.character-display.joffrey-baratheon {
+  background-image: url(../../assets/pictures/characters/png/joffrey.png);
+  background-repeat: no-repeat;
+}
+
+.character-display.oberyn-martell {
+  background-image: url(../../assets/pictures/characters/png/oberyn.png);
+  background-repeat: no-repeat;
+}
+
+.character-display.catelyn-stark {
+  background-image: url(../../assets/pictures/characters/png/catelyn.png);
+  background-repeat: no-repeat;
+}
+
+.character-display.cersei-lannister {
+  background-image: url(../../assets/pictures/characters/png/cersey.png);
+  background-repeat: no-repeat;
+}
+
+.token {
+  width: 90px;
+  height: 90px;
+  margin: 5px 0;
+  margin-left: 10px;
+}
+
+.token.arya-stark {
+  background-image: url(../../assets/pictures/shields/png/shieldstarkgirl.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.token.jon-snow {
+  background-image: url(../../assets/pictures/shields/png/shieldstark.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.token.daenerys-targaryan {
+  background-image: url(../../assets/pictures/shields/png/shieldtargaryan.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.token.theon-greyjoy {
+  background-image: url(../../assets/pictures/shields/png/shieldgreyjoy.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.token.tyrion-lannister {
+  background-image: url(../../assets/pictures/shields/png/shieldlannister1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.token.margaery-tyrell {
+  background-image: url(../../assets/pictures/shields/png/shieldtyrell.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.token.joffrey-baratheon {
+  background-image: url(../../assets/pictures/shields/png/shieldbaratheon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.token.oberyn-martell {
+  background-image: url(../../assets/pictures/shields/png/shieldmartell.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.token.catelyn-stark {
+  background-image: url(../../assets/pictures/shields/png/shieldtully.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.token.cersei-lannister {
+  background-image: url(../../assets/pictures/shields/png/shieldlannister.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .logo-game {
   width: 400px;
+  margin-left: 300px;
 }
 
-.player-display {
-  color: white;
-  font-size: 40px;
+.backBtn {
+  display: block;
+  margin-right: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  background: #560753;
+  margin: 20px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
-.player-field {
-  float: left;
-  margin-left: 20px;
+.backBtn:hover {
+  background: #073f50;
+}
+
+a {
+  color: #ffb20a;
+  text-decoration: none;
+}
+
+.headerBtn {
+  float: right;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.colPlayer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 40px;
+  font-family: "Cinzel", serif;
+  background-color: rgba(7, 63, 80, 0.7);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.colScore {
+  display: block;
 }
 
 .square {
   -webkit-transform: rotate(0);
           transform: rotate(0);
-  height: 80px;
-  width: 80px;
+  height: 130px;
+  width: 130px;
   margin: 3px;
 }
 
+.scoreP {
+  font-family: "Cinzel", serif;
+}
+
 .board {
-  margin-top: 20px;
   position: relative;
-  margin-left: 200px;
+  padding-bottom: 0px;
 }
 
 .tile-container {
@@ -196,14 +389,14 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 650px;
+  width: 900px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .tile {
   border: 2px solid white;
-  background: #367c92;
+  background-color: rgba(51, 150, 179, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,6 +456,7 @@ header {
 
 .character-score-display {
   color: white;
+  display: inline-block;
 }
 
 .token-1.start-only {
@@ -274,20 +468,95 @@ header {
   color: white;
 }
 
-.token {
-  width: 50px;
-  height: 50px;
-  margin: 10px 0;
+.token.Jon {
+  background: #ffb20a;
 }
 
-.token.arya-stark {
-  background-image: url(../../assets/pictures/shields/png/shieldstarkgirl.png);
-  background-size: contain;
+#character {
+  font-family: "Cinzel", serif;
+  font-size: 70px;
+  color: #ffb20a;
+}
+
+.containerWinner {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1400px;
+  background-color: rgba(7, 63, 80, 0.8);
+  border: 2px solid white;
+  border-radius: 10px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+
+.buttons {
+  text-align: center;
+  margin: 30px 800px 30px 800px;
+  padding: 30px 40px 30px 40px;
+  background-color: #560753;
+  font-family: "Cinzel", serif;
+  font-size: 40px;
+  border: 2px solid white;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.winner-display {
+  width: 280px;
+  font-size: 30px;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.winner-display.arya-stark {
+  background-image: url(../../assets/pictures/characters/png/arya.png);
   background-repeat: no-repeat;
 }
 
-.token.Jon {
-  background: #ffb20a;
+.winner-display.jon-snow {
+  background-image: url(../../assets/pictures/characters/png/jonsnow.png);
+  background-repeat: no-repeat;
+}
+
+.winner-display.daenerys-targaryan {
+  background-image: url(../../assets/pictures/characters/png/denerys.png);
+  background-repeat: no-repeat;
+}
+
+.winner-display.theon-greyjoy {
+  background-image: url(../../assets/pictures/characters/png/theon.png);
+  background-repeat: no-repeat;
+}
+
+.winner-display.tyrion-lannister {
+  background-image: url(../../assets/pictures/characters/png/tyrion1.png);
+  background-repeat: no-repeat;
+}
+
+.winner-display.margaery-tyrell {
+  background-image: url(../../assets/pictures/characters/png/tyrell.png);
+  background-repeat: no-repeat;
+}
+
+.winner-display.joffrey-baratheon {
+  background-image: url(../../assets/pictures/characters/png/joffrey.png);
+  background-repeat: no-repeat;
+}
+
+.winner-display.oberyn-martell {
+  background-image: url(../../assets/pictures/characters/png/oberyn.png);
+  background-repeat: no-repeat;
+}
+
+.winner-display.catelyn-stark {
+  background-image: url(../../assets/pictures/characters/png/catelyn.png);
+  background-repeat: no-repeat;
+}
+
+.winner-display.cersei-lannister {
+  background-image: url(../../assets/pictures/characters/png/cersey.png);
+  background-repeat: no-repeat;
 }
 
 /*body */

@@ -34,7 +34,7 @@ dice.addEventListener("click", function() {
     var theDice = this;
 
     // change the inner HTML
-    theDice.innerHTML = "Rolling...";
+    theDice.innerHTML = "...";
     // add a class
     theDice.classList.add("rolling");
 
@@ -121,7 +121,7 @@ function moveToken() {
             if (character1Score === totalTiles - 1) {
                 // go to winners page
 
-                window.location.href = "winner.html";
+                window.location.href = "victory.html";
             }
         }
     });

@@ -82,5 +82,5 @@ var characterCersey;
 getCharacters(238).then(function (data) {
     characterCersey = data;
     console.log(characterCersey);
-    document.getElementById('cersey').innerHTML += '<p><b>Name:</b> ' + characterCersey.name + '</p><p><b>Gender:</b> ' + characterCersey.gender + '<p><b>Culture: </b>' + characterCersey.culture + '</p><p><b>Born:</b> ' + characterCersey.born + '</p>';
+    document.getElementById('cersei').innerHTML += '<p><b>Name:</b> ' + characterCersey.name + '</p><p><b>Gender:</b> ' + characterCersey.gender + '<p><b>Culture: </b>' + characterCersey.culture + '</p><p><b>Born:</b> ' + characterCersey.born + '</p>';
 });
