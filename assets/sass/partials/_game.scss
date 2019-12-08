@@ -6,15 +6,8 @@
 
 
 .backBtn {
-    display: block;
-    margin-right: 20px;
-    font-family: $body-font2;
-    font-size: 20px;
-    background: $darkPurple;
-    margin: 20px;
+    @include buttons;
     padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 10px;
 }
 
 .backBtn:hover {
@@ -144,4 +137,20 @@ a {
 
 .token.Jon {
     background: $yellow;
+}
+
+
+#trap1 {
+    background: blue; 
+}
+
+.tile.trap {
+    border: 2px solid white;
+    background: $darkTeal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-family: $body-font2;
 }

@@ -1,0 +1,21 @@
+.backToCharacter {
+    text-align: center;
+    margin: 30px 800px 30px 800px;
+    padding: 20px 20px 20px 20px;
+    background-color: $darkPurple;
+    font-family: $header-font;
+    font-size: 25px;
+    border: 2px solid white;
+    color: $white;
+    border-radius: 10px;
+}
+
+.backToCharacter:hover {
+    background-color: $darkTeal;
+}
+
+.playParagraph {
+    font-family: $header-font;
+    margin-top: 30px;
+    font-size: 30px;
+}

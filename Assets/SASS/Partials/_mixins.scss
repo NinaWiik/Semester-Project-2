@@ -29,3 +29,14 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+@mixin buttons {
+    display: block;
+    margin-right: 20px;
+    font-family: $body-font2;
+    font-size: 20px;
+    background: $darkPurple;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}

@@ -104,6 +104,14 @@ function moveToken() {
             }
         });
 
+
+        //var trap1 = document.getElementById("trap1")
+
+        //if character1Score === trap1 {
+          //  alert("bla");
+        //}
+
+
         //chcek if the score (-1) matches the tile
         // if it does, append the token element
         if (indexOfTile === character1Score) {
@@ -116,6 +124,8 @@ function moveToken() {
             console.log("tokenOne", tokenOne);
 
             tile.appendChild(tokenOne);
+
+            
 
             // check if token is on the last tile
             if (character1Score === totalTiles - 1) {

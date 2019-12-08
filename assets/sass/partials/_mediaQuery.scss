@@ -1,0 +1,68 @@
+
+
+
+// TABLET
+
+@media only screen and (max-width: 960px) {
+    .col {
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container2 {
+        flex-direction: column;
+    }
+
+
+    .logo {
+        width: 400px;
+    }
+
+    .container-selection {
+        font-size: 30px;
+    }
+
+    #startGame {
+        font-size: 17px;
+    }
+
+}
+
+
+// MOBILE 
+
+@media only screen and (max-width: 600px) {
+    .col {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 350px;
+        
+    }
+
+    .container-selection {
+        font-size: 25px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #startGame {
+        font-size: 15px;
+    }
+
+    .characterImg {
+        height: 200px;
+    }
+
+    .flex-container2 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+}
