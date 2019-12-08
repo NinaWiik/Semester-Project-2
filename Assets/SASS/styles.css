@@ -587,6 +587,12 @@ a {
   border-radius: 10px;
 }
 
+#myCanvas {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+}
+
 .winner-display {
   width: 280px;
   font-size: 30px;
