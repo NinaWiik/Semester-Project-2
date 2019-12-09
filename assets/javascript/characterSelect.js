@@ -32,7 +32,11 @@ allCharacters.forEach(function(character) {
         else {
             startGame.disabled = true; 
         }
-
+        window.scrollTo({
+            top: 0,
+            left: 100,
+            behavior: 'smooth'
+          });
     })
 })
 

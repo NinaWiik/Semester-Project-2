@@ -74,8 +74,12 @@ function updateScoreDisplay(newScore) {
 }
 
 function hitATrap() {
+    // minus a number from the character score
     character1Score = character1Score - 2;
+    // display the new score
     updateScoreDisplay(character1Score);
+    trapModal.style.display = "block";
+    // call the moveToken function again to loop through the tiles and place the token on the new character score
     moveToken();
 }
 
@@ -98,9 +102,12 @@ function moveToken() {
         updateScoreDisplay(character1Score);
     }
 
-    tiles.forEach(function(tile, indexOfTile) {
+
+    for(var i = 0; i < totalTiles; i++) {
+
+    // tiles.forEach(function(tile, indexOfTile) {
         //these are the elements inside the tile
-        var elementsInsideTile = tile.childNodes;
+        var elementsInsideTile = tiles[i].childNodes;
 
         // loop through the elements to check if #token is inside it
         elementsInsideTile.forEach(function(element) {
@@ -113,14 +120,15 @@ function moveToken() {
 
         //var trap1 = document.getElementById("trap1")
 
-        if (character1Score < 8) {
-            return hitATrap();
+        if (character1Score === 7 || character1Score === 17 || character1Score === 27) {
+            hitATrap();
+            break;
         }
 
 
         //chcek if the score (-1) matches the tile
         // if it does, append the token element
-        if (indexOfTile === character1Score) {
+        if (i === character1Score) {
             // make the token element
             var tokenOne = document.createElement("div");
 
@@ -129,7 +137,7 @@ function moveToken() {
 
             console.log("tokenOne", tokenOne);
 
-            tile.appendChild(tokenOne);
+            tiles[i].appendChild(tokenOne);
 
             
 
@@ -140,6 +148,6 @@ function moveToken() {
                 window.location.href = "winner.html";
             }
         }
-    });
+    };
 
 }
