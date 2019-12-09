@@ -31,7 +31,28 @@
     #startGame {
         font-size: 17px;
     }
+    
+    // WINNER PAGE
 
+    #character {
+        font-size: 40px;
+    }
+
+    .buttons {
+        font-size: 25px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .logo-winner {
+        width: 500px;
+    }
+
+    #myCanvas {
+        width: 90%;
+        height: 70%;
+        
+    }
 }
 
 
@@ -64,5 +85,26 @@
     .flex-container2 {
         flex-direction: column;
         margin-top: 0;
+    }
+
+    //WINNER PAGE
+    #character {
+        font-size: 35px;
+    }
+
+    .buttons {
+        font-size: 25px;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .logo-winner {
+        width: 400px;
+    }
+
+    #myCanvas {
+        width: 95%;
+        height: 70%;
+        
     }
 }

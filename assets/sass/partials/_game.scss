@@ -93,7 +93,8 @@ a {
     justify-content: center;
     align-items: center;
     color: $white;
-    font-family: $body-font2;
+    font-family: $header-font;
+    font-size: 20px;
 }
 
 .tile.start {
@@ -115,7 +116,7 @@ a {
     justify-content: center;
     align-items: center;
     color: $white;
-    font-family: $body-font2;
+    font-family: $header-font;
 }
 
 .character-score-display {

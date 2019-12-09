@@ -73,6 +73,12 @@ function updateScoreDisplay(newScore) {
     characterScoreDisplay.innerHTML = newScore;
 }
 
+function hitATrap() {
+    character1Score = character1Score - 2;
+    updateScoreDisplay(character1Score);
+    moveToken();
+}
+
 function moveToken() {
     // get all the tiles
     var tiles = document.querySelectorAll(".tile");
@@ -96,7 +102,7 @@ function moveToken() {
         //these are the elements inside the tile
         var elementsInsideTile = tile.childNodes;
 
-        // loop through the elements to check if #token1 is inside it
+        // loop through the elements to check if #token is inside it
         elementsInsideTile.forEach(function(element) {
             // if token1 is inside, remove it
             if (element.id === "token") {
@@ -107,9 +113,9 @@ function moveToken() {
 
         //var trap1 = document.getElementById("trap1")
 
-        //if character1Score === trap1 {
-          //  alert("bla");
-        //}
+        if (character1Score < 8) {
+            return hitATrap();
+        }
 
 
         //chcek if the score (-1) matches the tile
@@ -131,7 +137,7 @@ function moveToken() {
             if (character1Score === totalTiles - 1) {
                 // go to winners page
 
-                window.location.href = "victory.html";
+                window.location.href = "winner.html";
             }
         }
     });

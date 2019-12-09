@@ -18,19 +18,34 @@
 
 .buttons {
     text-align: center;
-    margin: 30px 800px 30px 800px;
+    margin: 30px;
     padding: 30px 40px 30px 40px;
     background-color: $darkPurple;
     font-family: $header-font;
-    font-size: 40px;
+    font-size: 35px;
     border: 2px solid white;
     color: $white;
     border-radius: 10px;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+.buttons:hover {
+    background-color: $darkTeal;
+    font-weight: 600;
+}
+
+.buttons:active {
+    border: 2px solid $yellow;
 }
 
 #myCanvas {
     position: absolute;
-    width: 90%;
-    height: 80%;
+    width: 99%;
+    height: 78%;
     
+}
+
+.pokal {
+    margin-left: 80%;
 }
