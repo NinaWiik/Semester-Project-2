@@ -541,6 +541,10 @@ a {
   cursor: pointer;
 }
 
+.playParagraph {
+  font-size: 30px;
+}
+
 .trapModalClass {
   display: none;
   position: fixed;

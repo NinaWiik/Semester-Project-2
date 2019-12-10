@@ -15,95 +15,95 @@
     </div>
     </header>
     <body>
-            <div class="container">
-                <div class="colPlayer">
-                    
-                    <div id="characterDisplay" class="character-display"></div>
-                    <div class="character-score-display">
-                            Score:
-                            <div id="characterScoreDisplay" class="character-score-display"></div>
-                        </div>             
-                    <div id="dice" class="dice">Roll</div>
-
-                 
-                </div>
-
-                    <div class="colBoard">
-                        <div class="board">
-                            <div class="tile-container">
-            
-                                <div class="tile square start">Start
-                                    <div id="token" class="token"></div>
-                                </div>
-                                <div class="tile square">1</div>
-                                <div class="tile square">2</div>
-                                <div class="tile square">3</div>
-                                <div class="tile square">4</div>
-                                <div class="tile square">5</div>
-                                <div class="tile square">6</div>
-                                <div class="tile square"><img src="assets/pictures/game/dragontrap3.jpg"></div>
-                                <div class="tile square">8</div>
-                                <div class="tile square">9</div>
-                                <div class="tile square">10</div>
-                                <div class="tile square">11</div>
-                                <div class="tile square">12</div>
-                                <div class="tile square">13</div>
-                                <div class="tile square">14</div>
-                                <div class="tile square">15</div>
-                                <div class="tile square">16</div>
-                                <div class="tile square"><img src="assets/pictures/game/dragontrap2.jpg"></div>
-                                <div class="tile square">18</div>
-                                <div class="tile square">19</div>
-                                <div class="tile square">20</div>
-                                <div class="tile square">21</div>
-                                <div class="tile square">22</div>
-                                <div class="tile square">23</div>
-                                <div class="tile square">24</div>
-                                <div class="tile square">25</div>
-                                <div class="tile square">26</div>
-                                <div class="tile square"><img src="assets/pictures/game/dragontrap1.jpg"></div>
-                                <div class="tile square">28</div>
-                                <div class="tile square finish">Finish</div>
-            
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-   
-                <!-- <div class="container2">
-                    <div class="colScore">
-                        <div id="dice" class="dice">Dice</div>
-                        <div class="character-score-display">
-                            <p>Score:</p>
-                            <div id="characterScoreDisplay" class="character-score-display"></span>
-                        </div>
-                    </div>
-                </div> -->
+        <div class="container">
+            <div class="colPlayer">
+                
+                <div id="characterDisplay" class="character-display"></div>
+                <div class="character-score-display">
+                        Score:
+                        <div id="characterScoreDisplay" class="character-score-display"></div>
+                    </div>             
+                <div id="dice" class="dice">Roll</div>
+                
             </div>
 
+                <div class="colBoard">
+                    <div class="board">
+                        <div class="tile-container">
+        
+                            <div class="tile square start">Start
+                                <div id="token" class="token"></div>
+                            </div>
+                            <div class="tile square">1</div>
+                            <div class="tile square">2</div>
+                            <div class="tile square">3</div>
+                            <div class="tile square">4</div>
+                            <div class="tile square">5</div>
+                            <div class="tile square">6</div>
+                            <div class="tile square"><img src="assets/pictures/game/dragontrap3.jpg"></div>
+                            <div class="tile square">8</div>
+                            <div class="tile square">9</div>
+                            <div class="tile square">10</div>
+                            <div class="tile square">11</div>
+                            <div class="tile square">12</div>
+                            <div class="tile square">13</div>
+                            <div class="tile square">14</div>
+                            <div class="tile square">15</div>
+                            <div class="tile square">16</div>
+                            <div class="tile square"><img src="assets/pictures/game/dragontrap2.jpg"></div>
+                            <div class="tile square">18</div>
+                            <div class="tile square">19</div>
+                            <div class="tile square">20</div>
+                            <div class="tile square">21</div>
+                            <div class="tile square">22</div>
+                            <div class="tile square">23</div>
+                            <div class="tile square">24</div>
+                            <div class="tile square">25</div>
+                            <div class="tile square">26</div>
+                            <div class="tile square"><img src="assets/pictures/game/dragontrap1.jpg"></div>
+                            <div class="tile square">28</div>
+                            <div class="tile square finish">Finish</div>
+        
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
 
-            <div id="trapModal" class="trapModalClass">
-
-                    <div class="trap-modal-content">
-                        <span class="close">&times;</span>
-                        <h1>Oh no!</h1>
-                        <p class="trapParagraph">A scary dragon lingers in your path. </p> 
-                        <p class="trapParagraph">Go back two tiles</p>
-                        <img src="assets/pictures/game/dragon.png">
+            <!-- <div class="container2">
+                <div class="colScore">
+                    <div id="dice" class="dice">Dice</div>
+                    <div class="character-score-display">
+                        <p>Score:</p>
+                        <div id="characterScoreDisplay" class="character-score-display"></span>
                     </div>
                 </div>
+            </div> -->
+        </div>
 
 
-            <div id="playModal" class="modal">
+        <div id="trapModal" class="trapModalClass">
+
+            <div class="trap-modal-content">
+                <span class="close" id="trapModalClose">&times;</span>
+                <h1>Oh no!</h1>
+                <p class="trapParagraph">A scary dragon lingers in your path. </p> 
+                <p class="trapParagraph">Go back two tiles</p>
+                <img src="assets/pictures/game/dragon.png">
+            </div>
+        </div>
+
+
+        <div id="playModal" class="modal">
 
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="close" id="playModalClose">&times;</span>
                 <h1>How to play</h1>
-                        <p class="playParagraph">Choose a character</p>
-                        <p class="playParagraph">Click "play game" button</p>
-                        <p class="playParagraph">Roll the dice</p>
-                        <p class="playParagraph">Win the game</p>
+                <p class="playParagraph">Choose a character</p>
+                <p class="playParagraph">Click "play game"</p>
+                <p class="playParagraph">Roll the dice</p>
+                <p class="playParagraph">Try to avoid the dragon traps</p>
+                <p class="playParagraph">Win the game</p>
 
             </div>
         </div>

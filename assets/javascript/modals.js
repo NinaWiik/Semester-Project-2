@@ -1,47 +1,48 @@
 // HOW TO PLAY MODAL
 
 // Get the modal
-var modal = document.getElementById("playModal");
-var btn = document.getElementById("modalBtn");
-var span = document.getElementsByClassName("close")[0];
+var playModal = document.getElementById("playModal");
+var modalBtn = document.getElementById("modalBtn");
+var playModalClose = document.getElementById("playModalClose");
 
-// open modal on userclick
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+console.log("playModalClose", playModalClose);
 
-// outside click on modal
-window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-
-// close modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
-}
 
 
 // TRAP MODAL
-
 // Get the modal
 var trapModal = document.getElementById("trapModal");
-var span = document.getElementsByClassName("close")[0];
+var trapModalClose = document.getElementById("trapModalClose");
+
+
+// open modal on userclick
+modalBtn.onclick = function() {
+  playModal.style.display = "block";
+}
+
 
 
 // outside click on modal
 window.onclick = function(event) {
-    if (event.target == trapModal) {
+
+    console.log(event.target)
+
+    if (event.target === playModal || event.target === playModalClose) {
+      playModal.style.display = "none";
+    }
+
+    // playModalClose.onClick = function() {
+    //   console.log("ddd")
+    //   playModal.style.display = "none";
+    // }
+
+    if (event.target === trapModal) {
       trapModal.style.display = "none";
     }
 
-// close modal
-span.onclick = function() {
-  trapModal.style.display = "none";
-}
-
+    // close modal
+    trapModalClose.onclick = function() {
+      trapModal.style.display = "none";
+    }
 
 }
