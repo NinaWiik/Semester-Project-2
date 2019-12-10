@@ -120,7 +120,7 @@ function moveToken() {
 
         //var trap1 = document.getElementById("trap1")
 
-        if (character1Score === 7 || character1Score === 17 || character1Score === 27) {
+        if (character1Score === 4 || character1Score === 7 || character1Score === 17 || character1Score === 21 || character1Score === 24) {
             hitATrap();
             break;
         }
