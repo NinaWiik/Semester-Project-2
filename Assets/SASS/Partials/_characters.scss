@@ -66,11 +66,21 @@
     color: $white;
 }
 
+#startGame:hover {
+    background-color: $darkTeal;
+    color: $yellow;
+}
+
+#startGame:active {
+    border: 2px solid $yellow;
+}
+
 #startGame:disabled {
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
   cursor: not-allowed;
+  border: 2px solid white;
 }
 
 .content-container {
@@ -80,4 +90,5 @@
 
 .selected {
     border: 2px solid yellow;
+    background-color: rgba(51, 150, 179, 0.8);
 }

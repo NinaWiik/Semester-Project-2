@@ -1,4 +1,18 @@
+@media only screen and (max-width: 1468px) {
+    .buttons {
+        font-size: 35px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
 
+    .pokal {
+        margin-right: 70%;
+    }
+
+    .pokal1 {
+        margin-left: 70%;
+    }
+}
 
 
 // TABLET
@@ -53,6 +67,16 @@
         height: 70%;
         
     }
+
+    .pokal {
+       margin-right: 50%;
+       width: 250px;
+    }
+
+    .pokal1 {
+        margin-left: 50%;
+        width: 250px;
+    }
 }
 
 
@@ -106,5 +130,12 @@
         width: 95%;
         height: 70%;
         
+    }
+    .pokal {
+        display: none;
+    }
+
+    .pokal1 {
+        display: none;
     }
 }

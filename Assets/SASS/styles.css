@@ -149,11 +149,21 @@ header {
   color: #FFFFFF;
 }
 
+#startGame:hover {
+  background-color: #073f50;
+  color: #ffb20a;
+}
+
+#startGame:active {
+  border: 2px solid #ffb20a;
+}
+
 #startGame:disabled {
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
   cursor: not-allowed;
+  border: 2px solid white;
 }
 
 .content-container {
@@ -163,6 +173,7 @@ header {
 
 .selected {
   border: 2px solid yellow;
+  background-color: rgba(51, 150, 179, 0.8);
 }
 
 #dice {
@@ -171,7 +182,6 @@ header {
   border-radius: 5px;
   width: 100px;
   height: 100px;
-  margin: 10px 0;
   font-size: 35px;
   text-align: center;
   display: -webkit-box;
@@ -186,6 +196,8 @@ header {
   margin-top: 10px;
   cursor: pointer;
   font-weight: bold;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 #dice.rolling {
@@ -202,11 +214,15 @@ header {
 .character-display.arya-stark {
   background-image: url(../../assets/pictures/characters/png/arya.png);
   background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: unset;
 }
 
 .character-display.jon-snow {
   background-image: url(../../assets/pictures/characters/png/jonsnow.png);
   background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: unset;
 }
 
 .character-display.daenerys-targaryan {
@@ -222,6 +238,8 @@ header {
 .character-display.tyrion-lannister {
   background-image: url(../../assets/pictures/characters/png/tyrion1.png);
   background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: unset;
 }
 
 .character-display.margaery-tyrell {
@@ -382,6 +400,7 @@ a {
   padding-top: 10px;
   border: 2px solid white;
   border-radius: 10px;
+  text-align: center;
 }
 
 .colScore {
@@ -636,7 +655,20 @@ a {
 }
 
 .pokal {
-  margin-left: 80%;
+  margin-right: 100%;
+}
+
+.pokal1 {
+  margin-left: 100%;
+}
+
+.pokalPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .winner-display {
@@ -718,6 +750,20 @@ a {
   font-size: 30px;
 }
 
+@media only screen and (max-width: 1468px) {
+  .buttons {
+    font-size: 35px;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+  .pokal {
+    margin-right: 70%;
+  }
+  .pokal1 {
+    margin-left: 70%;
+  }
+}
+
 @media only screen and (max-width: 960px) {
   .col {
     -webkit-box-orient: vertical;
@@ -764,6 +810,14 @@ a {
     width: 90%;
     height: 70%;
   }
+  .pokal {
+    margin-right: 50%;
+    width: 250px;
+  }
+  .pokal1 {
+    margin-left: 50%;
+    width: 250px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -808,6 +862,12 @@ a {
   #myCanvas {
     width: 95%;
     height: 70%;
+  }
+  .pokal {
+    display: none;
+  }
+  .pokal1 {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
