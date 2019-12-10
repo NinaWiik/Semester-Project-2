@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Game of Dragons</title>
     <link rel="stylesheet" type="text/css" href="assets/sass/styles.css" />
-</head>
-<canvas id="myCanvas" width="1000px" height="200px"></canvas>
-<body>
+  </head>
+  <canvas id="myCanvas" width="1000px" height="200px"></canvas>
+  <body>
     <header>
-            <img src="assets/pictures/logo/logowhite.png" class="logo-winner" alt="logo with dragon" />
+      <img
+        src="assets/pictures/logo/logowhite.png"
+        class="logo-winner"
+        alt="logo with dragon"
+      />
     </header>
     <div class="containerWinner">
-        <div id="character">
+      <div id="character"></div>
+      <div class="winnerPicture">
+        <div id="winnerDisplay" class="winner-display">
+          <div class="pokalPic">
+            <img class="pokal" alt="trophy picture" src="assets/pictures/game/trophy.png" /><img class="pokal1" alt="trophy picture" src="assets/pictures/game/trophy.png"/>
+          </div>
         </div>
-        <div class="winnerPicture">
-        <div id="winnerDisplay" class="winner-display"><div class="pokalPic"><img class="pokal" src="assets/pictures/game/trophy.png"><img class="pokal1" src="assets/pictures/game/trophy.png"></div></div>
-        
-    </div>
+      </div>
     </div>
     <div class="buttons">
-    <a href="index.html"><div class="playAgain">Play Again</div></a>
+      <a href="index.html"><div class="playAgain">Play Again</div></a>
     </div>
-<script src="assets/javascript/winner.js"></script>
-</body>
+    <script src="assets/javascript/winner.js"></script>
+  </body>
 </html>
