@@ -28,6 +28,7 @@ main {
 
 body {
   background: url(../../assets/pictures/background2.jpg) no-repeat fixed;
+  background-size: cover;
 }
 
 header {
@@ -60,6 +61,9 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .col {
@@ -70,13 +74,6 @@ header {
   padding: 5px;
   border: 2px solid #FFFFFF;
   margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -84,6 +81,7 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 0 5px 0 5px;
+  max-width: 1440px;
 }
 
 .character:hover {
@@ -99,11 +97,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
   margin-top: 20px;
   margin-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .characterImg {
@@ -172,8 +170,16 @@ header {
 }
 
 .selected {
-  border: 2px solid yellow;
+  border: 2px solid #ffb20a;
   background-color: rgba(51, 150, 179, 0.8);
+}
+
+footer {
+  text-align: center;
+}
+
+.btn {
+  display: none;
 }
 
 #dice {
@@ -561,13 +567,41 @@ a {
 }
 
 .modal-content {
-  background-color: rgba(86, 7, 83, 0.9);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(7, 63, 80, 0.9)), to(rgba(86, 8, 83, 0.9)));
+  background: linear-gradient(270deg, rgba(7, 63, 80, 0.9), rgba(86, 8, 83, 0.9));
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 10s ease infinite;
   margin: 15% auto;
   padding: 20px;
   border: 2px solid white;
   width: 58%;
   text-align: center;
   border-radius: 10px;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .close {
@@ -603,13 +637,41 @@ a {
 }
 
 .trap-modal-content {
-  background-color: rgba(86, 7, 83, 0.9);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(7, 63, 80, 0.9)), to(rgba(86, 8, 83, 0.9)));
+  background: linear-gradient(270deg, rgba(7, 63, 80, 0.9), rgba(86, 8, 83, 0.9));
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 10s ease infinite;
   margin: 15% auto;
   padding: 20px;
   border: 2px solid white;
   width: 58%;
   text-align: center;
   border-radius: 10px;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .close {
@@ -641,12 +703,40 @@ a {
   margin: 0 auto;
   text-align: center;
   max-width: 1400px;
-  background-color: rgba(7, 63, 80, 0.8);
   border: 2px solid white;
   border-radius: 10px;
   padding-bottom: 40px;
   margin-top: 20px;
   padding-top: 30px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(7, 63, 80, 0.8)), to(rgba(86, 8, 83, 0.8)));
+  background: linear-gradient(270deg, rgba(7, 63, 80, 0.8), rgba(86, 8, 83, 0.8));
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .buttons {
@@ -661,6 +751,7 @@ a {
   border-radius: 10px;
   margin-right: 40%;
   margin-left: 40%;
+  position: relative;
 }
 
 .buttons:hover {
@@ -672,10 +763,13 @@ a {
   border: 2px solid #ffb20a;
 }
 
-#myCanvas {
+#snow {
   position: absolute;
-  width: 99%;
-  height: 78%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .pokal {
@@ -790,13 +884,9 @@ a {
 
 @media only screen and (max-width: 960px) {
   .col {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 50%;
     margin: 0 auto;
     margin-bottom: 30px;
+    width: 56%;
   }
   .flex-container {
     -webkit-box-orient: vertical;
@@ -810,11 +900,29 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .btn {
+    display: block;
+    display: block;
+    margin-right: 20px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    background: #560753;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: #ffb20a;
+    padding: 10px;
+    margin-right: 42%;
+    margin-left: 42%;
+    margin-bottom: 0;
+  }
   .logo {
     width: 400px;
   }
   .container-selection {
     font-size: 30px;
+    margin-right: 20%;
+    margin-left: 20%;
   }
   #startGame {
     font-size: 17px;
@@ -823,24 +931,27 @@ a {
     font-size: 40px;
   }
   .buttons {
-    font-size: 25px;
-    margin-left: 35%;
-    margin-right: 35%;
+    font-size: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    margin-top: 50px;
   }
   .logo-winner {
     width: 500px;
   }
-  #myCanvas {
-    width: 90%;
-    height: 70%;
-  }
   .pokal {
-    margin-right: 50%;
-    width: 250px;
+    margin-right: 48%;
+    width: 200px;
+    margin-top: 100px;
   }
   .pokal1 {
-    margin-left: 50%;
-    width: 250px;
+    margin-left: 48%;
+    width: 200px;
+    margin-top: 100px;
+  }
+  .containerWinner {
+    margin-top: 50px;
   }
 }
 
@@ -850,14 +961,31 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 80%;
   }
   .logo {
     width: 350px;
   }
+  .btn {
+    display: block;
+    display: block;
+    margin-right: 20px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    background: #560753;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: #ffb20a;
+    padding: 10px;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-bottom: 0;
+  }
   .container-selection {
     font-size: 25px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   #startGame {
     font-size: 15px;
@@ -873,25 +1001,26 @@ a {
     margin-top: 0;
   }
   #character {
-    font-size: 35px;
+    font-size: 30px;
   }
   .buttons {
     font-size: 25px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+    margin-top: 40px;
   }
   .logo-winner {
-    width: 400px;
-  }
-  #myCanvas {
-    width: 95%;
-    height: 70%;
+    width: 340px;
   }
   .pokal {
     display: none;
   }
   .pokal1 {
     display: none;
+  }
+  .containerWinner {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

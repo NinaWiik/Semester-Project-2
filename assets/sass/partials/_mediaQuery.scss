@@ -19,10 +19,12 @@
 
 @media only screen and (max-width: 960px) {
     .col {
-        flex-direction: column;
-        width: 50%;
+    
         margin: 0 auto;
         margin-bottom: 30px;
+        width: 56%;
+        //margin-left: 30%;
+        //margin-right: 30%;
     }
 
     .flex-container {
@@ -33,6 +35,15 @@
         flex-direction: column;
     }
 
+    .btn {
+        display: block;
+        @include buttons;
+        color: $yellow;
+        padding: 10px;
+        margin-right: 42%;
+        margin-left: 42%;
+        margin-bottom: 0;
+    }
 
     .logo {
         width: 400px;
@@ -40,6 +51,8 @@
 
     .container-selection {
         font-size: 30px;
+        margin-right: 20%;
+        margin-left: 20%;
     }
 
     #startGame {
@@ -53,30 +66,34 @@
     }
 
     .buttons {
-        font-size: 25px;
-        margin-left: 35%;
-        margin-right: 35%;
+        font-size: 30px;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 20px;
+        margin-top: 50px;
     }
 
     .logo-winner {
         width: 500px;
     }
 
-    #myCanvas {
-        width: 90%;
-        height: 70%;
-        
-    }
 
     .pokal {
-       margin-right: 50%;
-       width: 250px;
+       margin-right: 48%;
+       width: 200px;
+       margin-top: 100px;
     }
 
     .pokal1 {
-        margin-left: 50%;
-        width: 250px;
+        margin-left: 48%;
+        width: 200px;
+        margin-top: 100px;
     }
+
+    .containerWinner{
+        margin-top: 50px;
+    }
+
 }
 
 
@@ -85,6 +102,7 @@
 @media only screen and (max-width: 600px) {
     .col {
         flex-direction: column;
+        width: 80%;
     }
 
     .logo {
@@ -92,10 +110,20 @@
         
     }
 
+    .btn {
+        display: block;
+        @include buttons;
+        color: $yellow;
+        padding: 10px;
+        margin-right: 8%;
+        margin-left: 8%;
+        margin-bottom: 0;
+    }
+
     .container-selection {
         font-size: 25px;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     #startGame {
@@ -113,24 +141,21 @@
 
     //WINNER PAGE
     #character {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .buttons {
         font-size: 25px;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 20px;
+        margin-top: 40px;
     }
 
     .logo-winner {
-        width: 400px;
+        width: 340px;
     }
 
-    #myCanvas {
-        width: 95%;
-        height: 70%;
-        
-    }
     .pokal {
         display: none;
     }
@@ -138,4 +163,10 @@
     .pokal1 {
         display: none;
     }
+
+
+    .containerWinner {
+        margin-top: 20px;
+    }
+
 }

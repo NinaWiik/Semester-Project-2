@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <title>Game of Dragons</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="assets/sass/styles.css" />
-  </head>
-  <canvas id="myCanvas" width="1000px" height="200px"></canvas>
-  <body>
-    <header>
-      <img
-        src="assets/pictures/logo/logowhite.png"
-        class="logo-winner"
-        alt="logo with dragon"
-      />
-    </header>
-    <div class="containerWinner">
-      <div id="character"></div>
-      <div class="winnerPicture">
-        <div id="winnerDisplay" class="winner-display">
-          <div class="pokalPic">
-            <img class="pokal" alt="trophy picture" src="assets/pictures/game/trophy.png" /><img class="pokal1" alt="trophy picture" src="assets/pictures/game/trophy.png"/>
-          </div>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A game of thrones inspired board game"/>
+    <meta name="keywords" content="game, gameofthrones, gameofdragons, snakesandlatters, got, games" />
+    <meta name="author" content="Nina Wiik"/>
+</head>
+
+<body>
+  <canvas id="snow"></canvas>
+
+  <header>
+    <img src="assets/pictures/logo/logowhite.png" class="logo-winner" alt="logo with dragon" />
+  </header>
+  <div class="containerWinner">
+    <div id="character"></div>
+    <div class="winnerPicture">
+      <div id="winnerDisplay" class="winner-display">
+        <div class="pokalPic">
+          <img class="pokal" alt="trophy picture" src="assets/pictures/game/trophy.png" /><img class="pokal1"
+            alt="trophy picture" src="assets/pictures/game/trophy.png" />
         </div>
       </div>
     </div>
-    <div class="buttons">
-      <a href="index.html"><div class="playAgain">Play Again</div></a>
-    </div>
+  </div>
+  <div class="buttons">
+    <a href="index.html">
+      <div class="playAgain">Play Again</div>
+    </a>
+  </div>
+  <footer>
     <script src="assets/javascript/winner.js"></script>
-  </body>
+  </footer>
+</body>
+
 </html>

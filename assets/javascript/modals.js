@@ -31,10 +31,6 @@ window.onclick = function(event) {
       playModal.style.display = "none";
     }
 
-    // playModalClose.onClick = function() {
-    //   console.log("ddd")
-    //   playModal.style.display = "none";
-    // }
 
     if (event.target === trapModal) {
       trapModal.style.display = "none";

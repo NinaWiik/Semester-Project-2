@@ -9,8 +9,7 @@ allCharacters.forEach(function(character) {
 
     character.addEventListener("click", function() {
 
-        //remove the "selected" class from all characters
-        // then add it the one that was clicked on
+        //remove the "selected" class from all characters, then add on clicked character
         clearSelectedClassFromAllCharacters();
 
         //get character name from data-attribute
@@ -32,6 +31,8 @@ allCharacters.forEach(function(character) {
         else {
             startGame.disabled = true; 
         }
+
+        // Scroll to top if character selected
         window.scrollTo({
             top: 0,
             left: 100,
@@ -40,14 +41,20 @@ allCharacters.forEach(function(character) {
     })
 })
 
+// if start game btn is clicked, take us to the game site
 startGame.addEventListener("click", function() {
     window.location.href = "game.html";
 })
 
-// this loops through the characters and removes the selected class
-// it's called when we click on each character
+// loops through the characters and removes the selected class, called when we click on character
 function clearSelectedClassFromAllCharacters() {
     allCharacters.forEach(function(character) {
         character.classList.remove("selected");
     })
+}
+
+// takes to top when clicked on button, that only appears on media devices
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
