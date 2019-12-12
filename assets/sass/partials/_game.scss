@@ -4,7 +4,6 @@
     
 }
 
-
 .backBtn {
     @include buttons;
     padding: 10px 20px;
@@ -19,14 +18,12 @@
 a {
     color: $yellow;
     text-decoration: none;
-    
 }
 
 .headerBtn {
     float: right;
     
 }
-
 
 .container {
     max-width: 1400px;
@@ -39,7 +36,6 @@ a {
     display: flex;
     margin: 0 auto;
 }
-
 
 .colPlayer {
     display: flex;
@@ -55,12 +51,9 @@ a {
     text-align: center;
 }
 
-
 .colScore {
     display: block;
 }
-
-
 
 .square {
     transform: rotate(0);
@@ -126,9 +119,6 @@ a {
     margin-top: 50px;
 }
 
-
-
-
 .token-1.start-only {
     position: absolute;
     left: -50px;
@@ -137,13 +127,6 @@ a {
 .character-display {
     color: white;
 }
-
-
-
-.token.Jon {
-    background: $yellow;
-}
-
 
 
 .tile.trap1 {

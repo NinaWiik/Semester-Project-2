@@ -5,8 +5,6 @@ var playModal = document.getElementById("playModal");
 var modalBtn = document.getElementById("modalBtn");
 var playModalClose = document.getElementById("playModalClose");
 
-console.log("playModalClose", playModalClose);
-
 
 
 // TRAP MODAL

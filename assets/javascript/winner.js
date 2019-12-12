@@ -1,153 +1,23 @@
+// WINNER PAGE
+
+// Get character from local storage
 var character = localStorage.getItem("character");
 
+// Display the winner name 
 var winnerDisplay = document.getElementById("character");
 winnerDisplay.innerHTML = "The winner is " + character;
 
 var winnerDisplay = document.getElementById("winnerDisplay");
 
 var characterClass = character.toLowerCase().replace(" ", "-");
-
+// gets the winner character picture, and adds the character class
 winnerDisplay.classList.add(characterClass);
 
 console.log(winnerDisplay);
 
 
-// FIREWORKS
-/*
-var maxFirework = 6,
-maxSpark = 40;
 
-var canvas = document.getElementById("myCanvas");
-var context = canvas.getContext('2d');
-var fireworks = [];
-
-for (var i = 0; i < maxFirework; i++) {
-    var firework = {
-        sparks: []
-    };
-
-    for (var n = 0; n < maxSpark; n++) {
-        var spark = {
-            vx: Math.random() * 5 + 0.5,
-            vy: Math.random() * 4 + 0.5,
-            weight: Math.random() * 0.3 + 0.01,
-            red: Math.floor(Math.random() * 3),
-            green: Math.floor(Math.random() * 1),
-            blue: Math.floor(Math.random() * 4)
-        };
-
-        if (Math.random() > 0.5) spark.vx = -spark.vx;
-        if (Math.random() > 0.5) spark.vy = -spark.vy;
-        firework.sparks.push(spark);
-    }
-    fireworks.push(firework);
-    resetFirework(firework);
-}
-
-window.requestAnimationFrame(explosion);
-
-function resetFirework(firework) {
-    firework.x = Math.floor(Math.random() * canvas.width);
-    firework.y = canvas.height;
-    firework.age = 0;
-    firework.phase = 'fly';
-}
-
-function explosion() {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    fireworks.forEach((firework,index) => {
-        if (firework.phase == 'kaboom') {
-            firework.sparks.forEach((spark) => {
-                for (var i = 0; i < 10; i++) {
-                    var trailAge = firework.age + i;
-                    var x = firework.x + spark.vx * trailAge;
-                    var y = firework.y + spark.vy * trailAge + spark.weight * trailAge * spark.weight * trailAge;
-                    var fade = i * 20 - firework.age * 2;
-                    var r = Math.floor(spark.red * fade);
-                    var g = Math.floor(spark.green * fade);
-                    var b = Math.floor(spark.blue * fade);
-                    context.beginPath();
-                    context.fillStyle = 'rgba(' + r + ',' + g + ',' + b + ',1)';
-                    context.rect(x, y, 4, 4);
-                    context.fill();
-                }
-            });
-            firework.age++;
-            if (firework.age > 100 && Math.random() < 0.05) {
-                resetFirework(firework);
-            }
-        } else {
-            firework.y = firework.y - 5;
-            for (var spark = 0; spark < 15; spark++) {
-                context.beginPath();
-                context.fillStyle = 'rgba(' + index * 50 + ',' + spark * 17 + ',0,1';
-                context.rect(firework.x + Math.random() * spark - spark / 2, firework.y + spark * 4, 4, 4);
-                context.fill();
-            }
-            if (Math.random() < 0.001 || firework.y < 200) firework.phase = 'kaboom';
-        }
-    });
-    window.requestAnimationFrame(explosion);
-}*/
-
-/*window.onload = function() {
-    //
-    var canvas = document.getElementById("sky");
-    var ctx = canvas.getContext("2d");
-
-    //
-    var W = window.innerWidth;
-    var H = window.innerHeight;
-    canvas.width = W;
-    canvas.height = H;
-
-    //
-    var mf = 100; // max flakes
-    var flakes = [];
-
-    //
-    for(var i = 0; i < mf; i++) {
-        flakes.push({
-            x: Math.random()*W,
-            y: Math.random()*H,
-            r: Math.random()*5+2,
-            d: Math.random()+1
-        })
-    }
-
-    function drawFlakes() {
-        ctx.clearRect(0, 0, W, H);
-        ctx.fillStyle = "white";
-        ctx.beginPath();
-        for(var i = 0; i < mf; i++) {
-            var f = flakes[i];
-            ctx.moveTo(f.x, f.y);
-            ctx.arc(f.x, f.y, f.r, 0, Math.PI*2, true);
-        }
-    ctx.fill();
-    moveFlakes();
-    }
-
-    var angle = 0;
-    
-    function moveFlakes() {
-        angle += 0.01;
-        for(var i = 0; i < mf; i++) {
-
-            var f = flakes[i];
-
-            f.y += Math.pow(f.d, 2) + 1;
-            f.x += Math.sin(angle) * 2;
-
-            if(f.y > H) {
-                flakes[i] = {x: Math.random()*W, y: 0, r: f.r, d: f.d};
-            }
-        }
-    }
-    setInterval(drawFlakes, 25);
-}
-*/
-
+// SNOW canvas
 var canvas = document.getElementById("snow");
 var ctx = canvas.getContext("2d");
 
@@ -186,6 +56,7 @@ function createFlakes() {
     }
 };
 
+// function that will draw the flakes, and add the dradient to it so it seems real
 function drawFlakes(){
     for(var i = 0; i < flakesArray.length; i++){    
         var gradient = ctx.createRadialGradient( 
@@ -201,6 +72,7 @@ function drawFlakes(){
             gradient.addColorStop(.8, "rgba(210, 236, 242," + flakesArray[i].opacity + ")");  
             gradient.addColorStop(1, "rgba(237, 247, 249," + flakesArray[i].opacity + ")");  
         
+            // start to make the flakes and draws the circles
             ctx.beginPath(); 
 
             ctx.arc(
@@ -208,6 +80,7 @@ function drawFlakes(){
             flakesArray[i].y, 
             flakesArray[i].radius, 0, Math.PI*2, false);
 
+        // Fill the flakes with the gradient
         ctx.fillStyle = gradient;   
         ctx.fill();                 
     }

@@ -23,6 +23,7 @@
     animation: spin 1000ms infinite linear;
 }
 
+// makes the spin animation on dice
 @keyframes spin {
     from {
       transform: rotate(0deg);
