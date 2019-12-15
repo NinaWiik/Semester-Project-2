@@ -615,8 +615,9 @@ a {
 }
 
 .playParagraph {
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Nunito", sans-serif;
+  margin-bottom: 50px;
 }
 
 .trapModalClass {
