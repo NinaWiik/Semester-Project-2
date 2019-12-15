@@ -615,7 +615,8 @@ a {
 }
 
 .playParagraph {
-  font-size: 30px;
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
 }
 
 .trapModalClass {
@@ -840,28 +841,6 @@ a {
 .winner-display.cersei-lannister {
   background-image: url(../../assets/pictures/characters/png/cersey.png);
   background-repeat: no-repeat;
-}
-
-.backToCharacter {
-  text-align: center;
-  margin: 30px 800px 30px 800px;
-  padding: 20px 20px 20px 20px;
-  background-color: #560753;
-  font-family: "Cinzel", serif;
-  font-size: 25px;
-  border: 2px solid white;
-  color: #FFFFFF;
-  border-radius: 10px;
-}
-
-.backToCharacter:hover {
-  background-color: #073f50;
-}
-
-.playParagraph {
-  font-family: "Cinzel", serif;
-  margin-top: 30px;
-  font-size: 30px;
 }
 
 @media only screen and (max-width: 1468px) {
